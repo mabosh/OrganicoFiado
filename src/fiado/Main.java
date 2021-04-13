@@ -6,12 +6,8 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		// Conjunto finito e ordenado
 		int[] fiados = new int[10];
-//		fiados[0] = 12;
-//		fiados[3] = 87;
-		
-		
+	
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Informe o nome do cliente: ");
 		String nome = scanner.nextLine();
@@ -20,10 +16,12 @@ public class Main {
 		
 		int total = somaWhile(fiados);
 		
-		System.out.println("Cliente " + nome + " deve: " + total);
-		
+		if (total > 100) {
+			System.out.println("Cliente " + nome + " deve: " + total + " - Ganhou um brinde");
+		} else {
+			System.out.println("Cliente " + nome + " deve: " + total);
+		}
 	}
-
 	
 	
 	public static int somaWhile(int[] fiados) {
