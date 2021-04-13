@@ -20,7 +20,7 @@ public class Main {
 		
 		int total = somaWhile(fiados);
 		
-		System.out.println("O Cliente " + nome + " deve: " + total);
+		System.out.println("Cliente " + nome + " deve: " + total);
 		
 	}
 
