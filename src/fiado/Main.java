@@ -7,10 +7,16 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Informe o nome do cliente: ");
 		
+		System.out.print("Informe o nome do cliente: ");
 		String nome = scanner.nextLine();
-		Consumidor consumidor = new Consumidor(nome);
+		System.out.print("Informe o número do cliente: ");
+		String numero = scanner.nextLine();
+		Consumidor consumidor = new Consumidor(nome, numero);
+		
+//		System.out.print("Informe o número do cliente: ");
+//		String numero = scanner.nextLine();
+//		Consumidor consumidor = new Consumidor(numero);
 		
 		System.out.print("Infome o valor da compra: ");
 		int fiado = Integer.valueOf(scanner.nextLine());
@@ -20,9 +26,9 @@ public class Main {
 //		int total = somaWhile(consumidor.fiados);
 		
 		if (total > 100) {
-			System.out.println("Cliente " + consumidor.getNome() + " deve: " + total);
+			System.out.println("Cliente " + consumidor.getNome() + " De número: " + consumidor.getNumero() + " deve: " + total);
 		} else {
-			System.out.println("Cliente " + consumidor.getNome() + " deve: " + total);
+			System.out.println("Cliente " + consumidor.getNome() + " De número: " + consumidor.getNumero() + " deve: " + total);
 		}
 	}
 	
