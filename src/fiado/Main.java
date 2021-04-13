@@ -18,10 +18,10 @@ public class Main {
 		int total = somaWhile(consumidor.fiados);
 		
 		if (total > 100) {
-			System.out.println("Cliente " + consumidor.nome + " deve: " + total + " - Ganhou um brinde");
-		} else {
 			System.out.println("Cliente " + consumidor.nome + " deve: " + total);
-		}
+		} //else {
+			//System.out.println("Cliente " + consumidor.nome + " deve: " + total);
+		//}
 	}
 	
 	
